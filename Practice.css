@@ -1,0 +1,701 @@
+/* =========================
+   IMROCC CODES
+   PRACTICE PAGE
+   SOLARIZED BLUE
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #061923;
+    color: #eaf7ff;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    min-height: 75px;
+    padding: 15px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #071f2c;
+    border-bottom: 1px solid #16465d;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo span {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #008cba;
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: #b8d7e5;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 480px;
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            #0b4661 0%,
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #061923,
+            #082b3a
+        );
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.label,
+.section-label {
+    color: #00bfff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 78px);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #00bfff;
+}
+
+.hero-text > p:last-child {
+    max-width: 620px;
+    color: #a9c7d5;
+    font-size: 18px;
+}
+
+
+/* =========================
+   PRACTICE LOGO
+========================= */
+
+.practice-logo {
+    width: 280px;
+    height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #092b3a;
+    border: 1px solid #19789d;
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 50px rgba(0, 191, 255, 0.12),
+        inset 0 0 40px rgba(0, 191, 255, 0.04);
+}
+
+.practice-logo div {
+    color: #00bfff;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.practice-logo p {
+    color: #9fc8d8;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    padding: 90px 8% 50px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.intro > p:last-child {
+    max-width: 650px;
+    margin: auto;
+    color: #9fbcca;
+}
+
+
+/* =========================
+   PRACTICE SECTION
+========================= */
+
+.practice-section {
+    padding: 60px 8% 90px;
+}
+
+.css-practice {
+    background: #071f2c;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.section-heading p:last-child {
+    color: #9fbcca;
+}
+
+
+/* =========================
+   EDITOR
+========================= */
+
+.editor {
+    background: #04131b;
+
+    border: 1px solid #164d65;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.editor-top {
+    height: 48px;
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #092b3a;
+
+    border-bottom: 1px solid #164d65;
+
+    color: #00bfff;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.status {
+    color: #58d68d;
+    font-size: 11px;
+}
+
+.editor textarea {
+    width: 100%;
+    min-height: 350px;
+
+    padding: 25px;
+
+    display: block;
+
+    resize: vertical;
+
+    background: #04131b;
+    color: #c6f0ff;
+
+    border: none;
+    outline: none;
+
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.editor-buttons {
+    display: flex;
+    gap: 12px;
+
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+
+.editor-buttons button {
+    padding: 13px 24px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #008cba;
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.editor-buttons button:hover {
+    background: #00a9dc;
+    transform: translateY(-2px);
+}
+
+.editor-buttons .clear {
+    background: #123d50;
+}
+
+.editor-buttons .clear:hover {
+    background: #18566e;
+}
+
+
+/* =========================
+   PREVIEW
+========================= */
+
+.preview-container {
+    background: white;
+
+    border: 1px solid #164d65;
+    border-radius: 14px;
+
+    overflow: hidden;
+}
+
+.preview-title {
+    height: 45px;
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+
+    background: #092b3a;
+    color: #00bfff;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.preview-container iframe {
+    width: 100%;
+    height: 400px;
+
+    display: block;
+
+    border: none;
+    background: white;
+}
+
+
+/* =========================
+   CSS EDITOR
+========================= */
+
+.css-editor-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   CHALLENGES
+========================= */
+
+.challenges {
+    padding: 90px 8%;
+}
+
+.challenge-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.challenge-heading h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.challenge-heading p:last-child {
+    color: #9fbcca;
+}
+
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.challenge-card {
+    padding: 30px 24px;
+
+    background: #092b3a;
+    border: 1px solid #164d65;
+
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.challenge-card:hover {
+    transform: translateY(-8px);
+    border-color: #00bfff;
+
+    box-shadow:
+        0 15px 35px rgba(0, 191, 255, 0.08);
+}
+
+.challenge-card > span {
+    color: #00bfff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.challenge-card h3 {
+    margin: 12px 0 10px;
+    font-size: 21px;
+}
+
+.challenge-card p {
+    color: #9fbcca;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.challenge-card a {
+    color: #00bfff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   LEARN MORE
+========================= */
+
+.learn-more {
+    padding: 80px 8%;
+
+    text-align: center;
+
+    background: #071f2c;
+}
+
+.learn-more h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.learn-grid {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.learn-grid a {
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    background: #092b3a;
+
+    border: 1px solid #164d65;
+    border-radius: 12px;
+
+    color: white;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.learn-grid a:hover {
+    border-color: #00bfff;
+    transform: translateY(-5px);
+}
+
+.learn-grid strong {
+    font-size: 17px;
+}
+
+.learn-grid span {
+    color: #00bfff;
+    font-size: 13px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 55px 8% 25px;
+
+    text-align: center;
+
+    background: #04131b;
+    border-top: 1px solid #123d50;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.footer-logo span {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #008cba;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.footer-logo h3 {
+    letter-spacing: 1px;
+}
+
+footer > p {
+    color: #7999a8;
+}
+
+.footer-links {
+    margin: 25px 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #a9c7d5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #00bfff;
+}
+
+.copyright {
+    padding-top: 20px;
+
+    border-top: 1px solid #123342;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .challenge-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .learn-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 60px 6%;
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-text > p:last-child {
+        font-size: 16px;
+    }
+
+    .practice-logo {
+        width: 210px;
+        height: 210px;
+    }
+
+    .practice-logo div {
+        font-size: 55px;
+    }
+
+    .intro {
+        padding: 65px 6% 35px;
+    }
+
+    .intro h2 {
+        font-size: 30px;
+    }
+
+    .practice-section,
+    .challenges {
+        padding: 55px 6%;
+    }
+
+    .section-heading h2,
+    .challenge-heading h2,
+    .learn-more h2 {
+        font-size: 30px;
+    }
+
+    .css-editor-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .editor textarea {
+        min-height: 280px;
+        font-size: 12px;
+    }
+
+    .preview-container iframe {
+        height: 320px;
+    }
+
+    .challenge-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .learn-more {
+        padding: 60px 6%;
+    }
+
+    .editor-buttons {
+        flex-wrap: wrap;
+    }
+
+}

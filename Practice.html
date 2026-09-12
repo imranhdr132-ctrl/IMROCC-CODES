@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Practice | IMROCC CODES</title>
+
+    <link rel="stylesheet" href="Practice.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>IC</span>
+            <h2>IMROCC CODES</h2>
+        </div>
+
+        <nav>
+            <a href="Project.html">Home</a>
+            <a href="Learn.html">Learn</a>
+            <a href="HTML.html">HTML</a>
+            <a href="CSS.html">CSS</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="Buisness.html">Business</a>
+            <a href="Blog.html">Blog</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="label">IMROCC CODES PRACTICE</p>
+
+            <h1>
+                Practice.
+                <span>Code.</span>
+                Create.
+            </h1>
+
+            <p>
+                Write HTML and CSS code, run it, and see your result
+                instantly in the live preview.
+            </p>
+
+        </div>
+
+        <div class="practice-logo">
+            <div>&lt;/&gt;</div>
+            <p>CODE LAB</p>
+        </div>
+
+    </section>
+
+
+    <!-- PRACTICE INTRO -->
+    <section class="intro">
+
+        <p class="section-label">START PRACTICING</p>
+
+        <h2>Build Your Coding Skills</h2>
+
+        <p>
+            The best way to learn coding is to practice. Try the
+            examples below and change the code yourself.
+        </p>
+
+    </section>
+
+
+    <!-- HTML PRACTICE -->
+    <section class="practice-section">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="section-label">01 — HTML</p>
+
+                <h2>HTML Practice</h2>
+
+                <p>
+                    Write HTML and create the structure of your webpage.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="editor">
+
+            <div class="editor-top">
+                <span>HTML EDITOR</span>
+                <span class="status">● READY</span>
+            </div>
+
+            <textarea id="htmlCode"><!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+</head>
+
+<body>
+
+    <h1>Hello IMROCC!</h1>
+
+    <p>I am learning HTML.</p>
+
+    <button>Click Me</button>
+
+</body>
+</html></textarea>
+
+            <div class="editor-buttons">
+
+                <button onclick="runHTML()">
+                    ▶ Run HTML
+                </button>
+
+                <button onclick="clearHTML()" class="clear">
+                    Clear
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="preview-container">
+
+            <div class="preview-title">
+                LIVE PREVIEW
+            </div>
+
+            <iframe id="htmlPreview"></iframe>
+
+        </div>
+
+    </section>
+
+
+    <!-- CSS PRACTICE -->
+    <section class="practice-section css-practice">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="section-label">02 — CSS</p>
+
+                <h2>CSS Practice</h2>
+
+                <p>
+                    Change colors, sizes, spacing and more using CSS.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="css-editor-layout">
+
+            <!-- HTML -->
+            <div class="editor">
+
+                <div class="editor-top">
+                    <span>HTML</span>
+                </div>
+
+                <textarea id="cssHTML"><div class="box">
+    <h1>IMROCC</h1>
+    <p>Practice CSS</p>
+</div></textarea>
+
+            </div>
+
+
+            <!-- CSS -->
+            <div class="editor">
+
+                <div class="editor-top">
+                    <span>CSS</span>
+                </div>
+
+                <textarea id="cssCode">body {
+    background: #061923;
+}
+
+.box {
+    padding: 30px;
+    text-align: center;
+    background: #092b3a;
+    border: 2px solid #00bfff;
+    border-radius: 15px;
+}
+
+h1 {
+    color: #00bfff;
+}
+
+p {
+    color: white;
+}</textarea>
+
+            </div>
+
+        </div>
+
+
+        <div class="editor-buttons">
+
+            <button onclick="runCSS()">
+                ▶ Run CSS
+            </button>
+
+            <button onclick="clearCSS()" class="clear">
+                Clear
+            </button>
+
+        </div>
+
+
+        <div class="preview-container">
+
+            <div class="preview-title">
+                LIVE CSS PREVIEW
+            </div>
+
+            <iframe id="cssPreview"></iframe>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHALLENGES -->
+    <section class="challenges">
+
+        <div class="challenge-heading">
+
+            <p class="section-label">CODING CHALLENGES</p>
+
+            <h2>Test Yourself</h2>
+
+            <p>
+                Try these small challenges without looking at the answer.
+            </p>
+
+        </div>
+
+
+        <div class="challenge-grid">
+
+            <div class="challenge-card">
+
+                <span>01</span>
+
+                <h3>Create A Heading</h3>
+
+                <p>
+                    Create an H1 heading that says
+                    "My First Website".
+                </p>
+
+                <a href="HTML.html">
+                    Practice HTML →
+                </a>
+
+            </div>
+
+
+            <div class="challenge-card">
+
+                <span>02</span>
+
+                <h3>Create A Paragraph</h3>
+
+                <p>
+                    Create a paragraph describing
+                    yourself.
+                </p>
+
+                <a href="HTML.html">
+                    Practice HTML →
+                </a>
+
+            </div>
+
+
+            <div class="challenge-card">
+
+                <span>03</span>
+
+                <h3>Change A Color</h3>
+
+                <p>
+                    Use CSS to change the color
+                    of a heading.
+                </p>
+
+                <a href="CSS.html">
+                    Practice CSS →
+                </a>
+
+            </div>
+
+
+            <div class="challenge-card">
+
+                <span>04</span>
+
+                <h3>Create A Box</h3>
+
+                <p>
+                    Create a box using padding,
+                    border and background.
+                </p>
+
+                <a href="CSS.html">
+                    Practice CSS →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEARNING LINKS -->
+    <section class="learn-more">
+
+        <p class="section-label">KEEP LEARNING</p>
+
+        <h2>Want More Practice?</h2>
+
+        <div class="learn-grid">
+
+            <a href="HTML.html">
+                <strong>HTML Lessons</strong>
+                <span>Learn HTML →</span>
+            </a>
+
+            <a href="CSS.html">
+                <strong>CSS Lessons</strong>
+                <span>Learn CSS →</span>
+            </a>
+
+            <a href="Learn.html">
+                <strong>Learning Dashboard</strong>
+                <span>Back To Learn →</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+
+            <span>IC</span>
+
+            <h3>IMROCC CODES</h3>
+
+        </div>
+
+        <p>
+            Learn. Code. Create.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="Project.html">Home</a>
+            <a href="Learn.html">Learn</a>
+            <a href="HTML.html">HTML</a>
+            <a href="CSS.html">CSS</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="Blog.html">Blog</a>
+            <a href="Contact.html">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 IMROCC CODES. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        /* HTML RUNNER */
+
+        function runHTML() {
+
+            let code = document.getElementById("htmlCode").value;
+
+            document.getElementById("htmlPreview").srcdoc = code;
+        }
+
+
+        /* CLEAR HTML */
+
+        function clearHTML() {
+
+            document.getElementById("htmlCode").value = "";
+
+            document.getElementById("htmlPreview").srcdoc = "";
+        }
+
+
+        /* CSS RUNNER */
+
+        function runCSS() {
+
+            let html = document.getElementById("cssHTML").value;
+
+            let css = document.getElementById("cssCode").value;
+
+            let fullCode = `
+
+                <!DOCTYPE html>
+
+                <html>
+
+                <head>
+
+                    <style>
+
+                        ${css}
+
+                    </style>
+
+                </head>
+
+                <body>
+
+                    ${html}
+
+                </body>
+
+                </html>
+
+            `;
+
+            document.getElementById("cssPreview").srcdoc = fullCode;
+        }
+
+
+        /* CLEAR CSS */
+
+        function clearCSS() {
+
+            document.getElementById("cssHTML").value = "";
+
+            document.getElementById("cssCode").value = "";
+
+            document.getElementById("cssPreview").srcdoc = "";
+        }
+
+
+        /* RUN DEFAULT EXAMPLES */
+
+        runHTML();
+
+        runCSS();
+
+    </script>
+
+</body>
+
+</html>

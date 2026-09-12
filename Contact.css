@@ -1,0 +1,617 @@
+/* =========================
+   IMROCC CODES
+   CONTACT PAGE
+   SOLARIZED BLUE THEME
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #061923;
+    color: #eaf7ff;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #071f2c;
+    border-bottom: 1px solid #16465d;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo span {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #008cba;
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 19px;
+    font-weight: bold;
+
+    box-shadow: 0 0 20px rgba(0, 140, 186, 0.25);
+}
+
+.logo h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: #b8d7e5;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00bfff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 470px;
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    background:
+        radial-gradient(circle at 80% 40%, #0b4661 0%, transparent 30%),
+        linear-gradient(135deg, #061923, #082b3a);
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.small-title,
+.section-label {
+    color: #00bfff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 75px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #00bfff;
+}
+
+.hero-text > p:last-child {
+    max-width: 580px;
+    color: #a9c7d5;
+    font-size: 17px;
+}
+
+
+/* =========================
+   CONTACT LOGO
+========================= */
+
+.contact-logo {
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid #19789d;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #092b3a;
+
+    box-shadow:
+        0 0 50px rgba(0, 191, 255, 0.12),
+        inset 0 0 40px rgba(0, 191, 255, 0.04);
+}
+
+.big-ic {
+    font-size: 100px;
+    font-weight: bold;
+    color: #00bfff;
+    letter-spacing: 5px;
+}
+
+.contact-logo p {
+    color: #b9dce9;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    padding: 90px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    background: #071f2c;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    color: #a9c7d5;
+    max-width: 520px;
+    margin-bottom: 35px;
+}
+
+
+/* INFO BOX */
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 20px;
+    margin-bottom: 15px;
+
+    background: #092b3a;
+    border: 1px solid #164d65;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.info-box:hover {
+    transform: translateX(8px);
+    border-color: #00bfff;
+}
+
+.info-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #063d55;
+    color: #00bfff;
+
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.info-box h3 {
+    font-size: 17px;
+}
+
+.info-box p {
+    color: #9fbcca;
+    font-size: 14px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.contact-form {
+    padding: 35px;
+
+    background: #092b3a;
+    border: 1px solid #16536c;
+    border-radius: 18px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+    font-size: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    color: #b9dce9;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+    margin-bottom: 18px;
+
+    background: #061923;
+    color: white;
+
+    border: 1px solid #18516a;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00bfff;
+    box-shadow: 0 0 12px rgba(0, 191, 255, 0.1);
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #008cba;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #00a9dc;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   QUICK LINKS
+========================= */
+
+.quick-section {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.quick-section h2 {
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.quick-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.quick-card {
+    padding: 30px 22px;
+
+    text-decoration: none;
+    color: white;
+
+    background: #092b3a;
+    border: 1px solid #164d65;
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.quick-card:hover {
+    transform: translateY(-8px);
+    border-color: #00bfff;
+    box-shadow: 0 15px 30px rgba(0, 191, 255, 0.08);
+}
+
+.quick-card span {
+    color: #00bfff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.quick-card h3 {
+    margin: 12px 0 8px;
+    font-size: 20px;
+}
+
+.quick-card p {
+    color: #9fbcca;
+    font-size: 14px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    margin: 20px 8% 90px;
+    padding: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    background:
+        linear-gradient(135deg, #0a3548, #082637);
+
+    border: 1px solid #17627f;
+    border-radius: 20px;
+}
+
+.cta h2 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.cta p:last-child {
+    color: #a9c7d5;
+}
+
+.cta-button {
+    padding: 14px 25px;
+
+    background: #008cba;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #00a9dc;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 55px 8% 25px;
+
+    text-align: center;
+
+    background: #04131b;
+    border-top: 1px solid #123d50;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin-bottom: 10px;
+}
+
+.footer-logo span {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #008cba;
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.footer-logo h3 {
+    letter-spacing: 1px;
+}
+
+footer > p {
+    color: #7999a8;
+}
+
+.footer-links {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #a9c7d5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #00bfff;
+}
+
+.copyright {
+    padding-top: 20px;
+    border-top: 1px solid #123342;
+    font-size: 13px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .contact-section {
+        padding: 70px 6%;
+        grid-template-columns: 1fr;
+    }
+
+    .quick-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 65px 6%;
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .contact-logo {
+        width: 230px;
+        height: 230px;
+    }
+
+    .big-ic {
+        font-size: 75px;
+    }
+
+    .contact-section {
+        padding: 60px 6%;
+        gap: 45px;
+    }
+
+    .contact-info h2,
+    .quick-section h2 {
+        font-size: 30px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .quick-section {
+        padding: 60px 6%;
+    }
+
+    .quick-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta {
+        margin: 10px 6% 60px;
+        padding: 35px 25px;
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta h2 {
+        font-size: 29px;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+
+}

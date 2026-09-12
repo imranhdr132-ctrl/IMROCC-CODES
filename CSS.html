@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IC CSS Lessons</title>
+
+    <link rel="stylesheet" href="CSS.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>IC</span>
+            <div>
+                <h2>IMROCC</h2>
+                <small>CODES</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="Project.html">Home</a>
+            <a href="Learn.html">Learn</a>
+            <a href="HTML.html">HTML</a>
+            <a href="CSS.html" class="active">CSS</a>
+            <a href="About.html">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">IC • CSS LESSONS</p>
+
+            <h1>
+                Learn <span>CSS</span>
+                <br>
+                Step By Step
+            </h1>
+
+            <p>
+                Learn how to design websites with CSS.
+                Write CSS code, test it and see your changes live.
+            </p>
+
+            <a href="#lessons" class="hero-btn">
+                Start Learning →
+            </a>
+
+        </div>
+
+        <div class="css-logo">
+            <span>CSS</span>
+            <p>Cascading Style Sheets</p>
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="intro">
+
+        <p class="section-label">01 • INTRODUCTION</p>
+
+        <h2>What is CSS?</h2>
+
+        <p>
+            CSS stands for Cascading Style Sheets.
+            It is used to make HTML websites look beautiful.
+            With CSS you can change colors, sizes, spacing,
+            layouts, backgrounds and much more.
+        </p>
+
+    </section>
+
+
+    <!-- LESSONS -->
+    <section class="lessons" id="lessons">
+
+        <p class="section-label">02 • CSS LESSONS</p>
+
+        <h2>Learn CSS Codes</h2>
+
+        <p class="section-description">
+            Start with these basic CSS lessons and practice each code.
+        </p>
+
+
+        <!-- LESSON 1 -->
+        <div class="lesson-card">
+
+            <div class="lesson-number">01</div>
+
+            <div class="lesson-content">
+
+                <h3>CSS Selectors</h3>
+
+                <p>
+                    Selectors tell CSS which HTML element you want to style.
+                </p>
+
+                <pre><code>p {
+    color: blue;
+}</code></pre>
+
+                <button onclick="loadCSS(`p {
+    color: blue;
+}`)">
+                    Try This →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- LESSON 2 -->
+        <div class="lesson-card">
+
+            <div class="lesson-number">02</div>
+
+            <div class="lesson-content">
+
+                <h3>Colors</h3>
+
+                <p>
+                    Change the text color using the color property.
+                </p>
+
+                <pre><code>h1 {
+    color: red;
+}</code></pre>
+
+                <button onclick="loadCSS(`h1 {
+    color: red;
+}`)">
+                    Try This →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- LESSON 3 -->
+        <div class="lesson-card">
+
+            <div class="lesson-number">03</div>
+
+            <div class="lesson-content">
+
+                <h3>Backgrounds</h3>
+
+                <p>
+                    Add a background color to an element.
+                </p>
+
+                <pre><code>body {
+    background-color: lightblue;
+}</code></pre>
+
+                <button onclick="loadCSS(`body {
+    background-color: lightblue;
+}`)">
+                    Try This →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- LESSON 4 -->
+        <div class="lesson-card">
+
+            <div class="lesson-number">04</div>
+
+            <div class="lesson-content">
+
+                <h3>Font Size</h3>
+
+                <p>
+                    Use font-size to make text bigger or smaller.
+                </p>
+
+                <pre><code>h1 {
+    font-size: 50px;
+}</code></pre>
+
+                <button onclick="loadCSS(`h1 {
+    font-size: 50px;
+}`)">
+                    Try This →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- LESSON 5 -->
+        <div class="lesson-card">
+
+            <div class="lesson-number">05</div>
+
+            <div class="lesson-content">
+
+                <h3>Margin & Padding</h3>
+
+                <p>
+                    Margin creates outside space and padding creates inside space.
+                </p>
+
+                <pre><code>.box {
+    margin: 20px;
+    padding: 20px;
+}</code></pre>
+
+                <button onclick="loadCSS(`.box {
+    margin: 20px;
+    padding: 20px;
+}`)">
+                    Try This →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- LESSON 6 -->
+        <div class="lesson-card">
+
+            <div class="lesson-number">06</div>
+
+            <div class="lesson-content">
+
+                <h3>Borders</h3>
+
+                <p>
+                    Add a border around an HTML element.
+                </p>
+
+                <pre><code>.box {
+    border: 2px solid blue;
+}</code></pre>
+
+                <button onclick="loadCSS(`.box {
+    border: 2px solid blue;
+}`)">
+                    Try This →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CSS EDITOR -->
+    <section class="editor-section" id="editor">
+
+        <p class="section-label">03 • CSS PLAYGROUND</p>
+
+        <h2>Write Your CSS Code</h2>
+
+        <p>
+            Type CSS below and click <b>Run CSS</b> to see your design.
+        </p>
+
+
+        <div class="editor-container">
+
+            <!-- HTML SAMPLE -->
+            <div class="html-preview-code">
+
+                <h3>HTML</h3>
+
+                <pre><code>&lt;div class="box"&gt;
+    Hello IC!
+&lt;/div&gt;</code></pre>
+
+            </div>
+
+
+            <!-- CSS EDITOR -->
+            <div class="code-editor">
+
+                <div class="editor-top">
+                    <span>CSS Editor</span>
+                    <span class="dot"></span>
+                </div>
+
+                <textarea id="cssInput">.box {
+    background-color: #0b5ed7;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+}</textarea>
+
+                <div class="editor-buttons">
+
+                    <button onclick="runCSS()">
+                        ▶ Run CSS
+                    </button>
+
+                    <button class="clear-btn" onclick="clearCSS()">
+                        Clear
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PREVIEW -->
+        <div class="preview-area">
+
+            <div class="preview-heading">
+                <span>LIVE PREVIEW</span>
+            </div>
+
+            <iframe id="preview"></iframe>
+
+        </div>
+
+    </section>
+
+
+    <!-- TOPICS -->
+    <section class="topics">
+
+        <p class="section-label">04 • MORE CSS</p>
+
+        <h2>More Things To Learn</h2>
+
+
+        <div class="topic-grid">
+
+            <div class="topic-card">
+                <span>01</span>
+                <h3>Display</h3>
+                <p>Learn block, inline and other display types.</p>
+            </div>
+
+            <div class="topic-card">
+                <span>02</span>
+                <h3>Flexbox</h3>
+                <p>Create powerful layouts using Flexbox.</p>
+            </div>
+
+            <div class="topic-card">
+                <span>03</span>
+                <h3>Grid</h3>
+                <p>Create rows and columns with CSS Grid.</p>
+            </div>
+
+            <div class="topic-card">
+                <span>04</span>
+                <h3>Position</h3>
+                <p>Learn relative, absolute and fixed positioning.</p>
+            </div>
+
+            <div class="topic-card">
+                <span>05</span>
+                <h3>Transitions</h3>
+                <p>Add smooth effects when elements change.</p>
+            </div>
+
+            <div class="topic-card">
+                <span>06</span>
+                <h3>Responsive Design</h3>
+                <p>Make your website work on phones and computers.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHALLENGE -->
+    <section class="challenge">
+
+        <div>
+
+            <p class="section-label">05 • CHALLENGE</p>
+
+            <h2>Build Your First CSS Design</h2>
+
+            <p>
+                Try changing the background, text color,
+                padding, border and font size in the editor.
+            </p>
+
+        </div>
+
+        <a href="#editor">
+            Open Editor →
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            <strong>IC</strong>
+            <span>IMROCC CODES</span>
+        </div>
+
+        <p>
+            Learn HTML • Learn CSS • Build Websites
+        </p>
+
+        <p class="copyright">
+            © 2026 IMROCC CODES
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        const cssInput = document.getElementById("cssInput");
+        const preview = document.getElementById("preview");
+
+
+        function runCSS() {
+
+            const css = cssInput.value;
+
+            preview.srcdoc = `
+                <!DOCTYPE html>
+
+                <html>
+
+                <head>
+
+                    <style>
+
+                        body {
+                            margin: 0;
+                            padding: 40px;
+                            font-family: Arial, sans-serif;
+                            background: white;
+                        }
+
+                        ${css}
+
+                    </style>
+
+                </head>
+
+                <body>
+
+                    <div class="box">
+                        Hello IC!
+                    </div>
+
+                    <h1>CSS Preview</h1>
+
+                    <p>
+                        You can change this design using CSS.
+                    </p>
+
+                </body>
+
+                </html>
+            `;
+
+        }
+
+
+        function clearCSS() {
+
+            cssInput.value = "";
+
+            preview.srcdoc = `
+                <body style="
+                    font-family: Arial;
+                    padding: 40px;
+                ">
+                    <h2>Preview cleared</h2>
+                    <p>Write some CSS and click Run CSS.</p>
+                </body>
+            `;
+
+        }
+
+
+        function loadCSS(code) {
+
+            cssInput.value = code;
+
+            runCSS();
+
+            document.getElementById("editor").scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+
+        runCSS();
+
+    </script>
+
+</body>
+</html>

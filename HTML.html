@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Lessons | IMROCC CODES</title>
+
+    <link rel="stylesheet" href="HTML.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="Project.html" class="logo">
+            <span>IC</span>
+            IMROCC <b>CODES</b>
+        </a>
+
+        <nav>
+            <a href="Project.html">Home</a>
+            <a href="Learn.html">Learn</a>
+            <a href="#lessons">Lessons</a>
+            <a href="#editor">Editor</a>
+            <a href="#topics">Topics</a>
+        </nav>
+
+        <a href="Learn.html" class="back">
+            ← Learn
+        </a>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="tag">IMROCC CODES / HTML</p>
+
+            <h1>
+                LEARN<br>
+                <span>HTML.</span>
+            </h1>
+
+            <p>
+                Learn how to build the structure of a website
+                using HTML. Start with simple tags and slowly
+                build complete pages.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#lessons" class="primary-btn">
+                    Start Lessons ↓
+                </a>
+
+                <a href="#editor" class="secondary-btn">
+                    Open Editor
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="html-logo">
+
+            <div class="html-symbol">
+                &lt;/&gt;
+            </div>
+
+            <h2>HTML</h2>
+
+            <p>
+                HYPER TEXT MARKUP LANGUAGE
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HTML INTRO ================= -->
+
+    <section class="section intro">
+
+        <div class="heading">
+
+            <p>01 / INTRODUCTION</p>
+
+            <h2>
+                What is<br>
+                <span>HTML?</span>
+            </h2>
+
+        </div>
+
+        <div class="intro-grid">
+
+            <div>
+
+                <p>
+                    HTML stands for HyperText Markup Language.
+                    It is used to create the structure of web pages.
+                </p>
+
+                <p>
+                    HTML uses tags to tell the browser what each
+                    part of a webpage means.
+                </p>
+
+            </div>
+
+            <div class="example-card">
+
+<pre>
+&lt;h1&gt;My Website&lt;/h1&gt;
+
+&lt;p&gt;
+    Welcome to my website.
+&lt;/p&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LESSONS ================= -->
+
+    <section class="section lessons" id="lessons">
+
+        <div class="heading center">
+
+            <p>02 / HTML LESSONS</p>
+
+            <h2>
+                Learn the<br>
+                <span>basics.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="lesson-grid">
+
+
+            <!-- LESSON 01 -->
+
+            <article class="lesson-card">
+
+                <span class="number">01</span>
+
+                <div class="lesson-icon">
+                    &lt;h1&gt;
+                </div>
+
+                <h3>Headings</h3>
+
+                <p>
+                    Headings are used for titles and subtitles.
+                    HTML provides h1 to h6.
+                </p>
+
+<pre>
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Small Heading&lt;/h2&gt;
+</pre>
+
+                <button onclick="loadCode(
+`&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;h2&gt;My Second Heading&lt;/h2&gt;`
+)">
+                    Try This →
+                </button>
+
+            </article>
+
+
+            <!-- LESSON 02 -->
+
+            <article class="lesson-card">
+
+                <span class="number">02</span>
+
+                <div class="lesson-icon">
+                    &lt;p&gt;
+                </div>
+
+                <h3>Paragraphs</h3>
+
+                <p>
+                    Use the paragraph tag to write normal text
+                    on your website.
+                </p>
+
+<pre>
+&lt;p&gt;
+    Hello World!
+&lt;/p&gt;
+</pre>
+
+                <button onclick="loadCode(
+`&lt;p&gt;Welcome to IMROCC CODES!&lt;/p&gt;`
+)">
+                    Try This →
+                </button>
+
+            </article>
+
+
+            <!-- LESSON 03 -->
+
+            <article class="lesson-card">
+
+                <span class="number">03</span>
+
+                <div class="lesson-icon">
+                    &lt;a&gt;
+                </div>
+
+                <h3>Links</h3>
+
+                <p>
+                    Links allow users to move from one page
+                    to another.
+                </p>
+
+<pre>
+&lt;a href="page.html"&gt;
+    Open Page
+&lt;/a&gt;
+</pre>
+
+                <button onclick="loadCode(
+`&lt;a href=&quot;https://example.com&quot;&gt;Open Website&lt;/a&gt;`
+)">
+                    Try This →
+                </button>
+
+            </article>
+
+
+            <!-- LESSON 04 -->
+
+            <article class="lesson-card">
+
+                <span class="number">04</span>
+
+                <div class="lesson-icon">
+                    &lt;img&gt;
+                </div>
+
+                <h3>Images</h3>
+
+                <p>
+                    The image tag lets you place pictures
+                    inside your website.
+                </p>
+
+<pre>
+&lt;img src="photo.jpg"
+alt="My Photo"&gt;
+</pre>
+
+                <button onclick="loadCode(
+`&lt;h2&gt;My Image&lt;/h2&gt;
+&lt;img src=&quot;photo.jpg&quot; alt=&quot;My Photo&quot;&gt;`
+)">
+                    Try This →
+                </button>
+
+            </article>
+
+
+            <!-- LESSON 05 -->
+
+            <article class="lesson-card">
+
+                <span class="number">05</span>
+
+                <div class="lesson-icon">
+                    &lt;ul&gt;
+                </div>
+
+                <h3>Lists</h3>
+
+                <p>
+                    Create ordered and unordered lists
+                    using HTML.
+                </p>
+
+<pre>
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                <button onclick="loadCode(
+`&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;Web Design&lt;/li&gt;
+&lt;/ul&gt;`
+)">
+                    Try This →
+                </button>
+
+            </article>
+
+
+            <!-- LESSON 06 -->
+
+            <article class="lesson-card">
+
+                <span class="number">06</span>
+
+                <div class="lesson-icon">
+                    &lt;div&gt;
+                </div>
+
+                <h3>Divisions</h3>
+
+                <p>
+                    The div element is commonly used to group
+                    parts of a webpage.
+                </p>
+
+<pre>
+&lt;div&gt;
+    &lt;h2&gt;Hello&lt;/h2&gt;
+&lt;/div&gt;
+</pre>
+
+                <button onclick="loadCode(
+`&lt;div&gt;
+    &lt;h2&gt;My Card&lt;/h2&gt;
+    &lt;p&gt;This is my card.&lt;/p&gt;
+&lt;/div&gt;`
+)">
+                    Try This →
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CODE EDITOR ================= -->
+
+    <section class="editor-section" id="editor">
+
+        <div class="heading center">
+
+            <p>03 / CODE EDITOR</p>
+
+            <h2>
+                Type your<br>
+                <span>HTML code.</span>
+            </h2>
+
+            <p class="heading-description">
+                Write HTML below and press Run Code to see
+                your result.
+            </p>
+
+        </div>
+
+
+        <div class="editor">
+
+            <div class="editor-top">
+
+                <span>HTML EDITOR</span>
+
+                <div>
+                    <button onclick="runCode()">▶ Run Code</button>
+                    <button onclick="clearCode()">Clear</button>
+                </div>
+
+            </div>
+
+
+            <textarea id="codeInput" spellcheck="false"><h1>Hello IMROCC CODES!</h1>
+
+<p>I am learning HTML.</p>
+
+<button>My Button</button></textarea>
+
+
+            <div class="preview-title">
+                LIVE PREVIEW
+            </div>
+
+            <iframe id="preview"></iframe>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HTML STRUCTURE ================= -->
+
+    <section class="section structure">
+
+        <div class="heading">
+
+            <p>04 / STRUCTURE</p>
+
+            <h2>
+                Basic HTML<br>
+                <span>structure.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="structure-code">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;title&gt;My Website&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+
+    &lt;p&gt;My first website.&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TOPICS ================= -->
+
+    <section class="section topics" id="topics">
+
+        <div class="heading center">
+
+            <p>05 / MORE HTML</p>
+
+            <h2>
+                Explore more<br>
+                <span>topics.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="topic-grid">
+
+            <div class="topic">
+                <strong>01</strong>
+                <h3>Tables</h3>
+                <p>Create rows and columns.</p>
+            </div>
+
+            <div class="topic">
+                <strong>02</strong>
+                <h3>Forms</h3>
+                <p>Collect information from users.</p>
+            </div>
+
+            <div class="topic">
+                <strong>03</strong>
+                <h3>Semantic HTML</h3>
+                <p>Use meaningful HTML elements.</p>
+            </div>
+
+            <div class="topic">
+                <strong>04</strong>
+                <h3>Audio & Video</h3>
+                <p>Add media to webpages.</p>
+            </div>
+
+            <div class="topic">
+                <strong>05</strong>
+                <h3>Attributes</h3>
+                <p>Add extra information to elements.</p>
+            </div>
+
+            <div class="topic">
+                <strong>06</strong>
+                <h3>Comments</h3>
+                <p>Add notes inside your code.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CHALLENGE ================= -->
+
+    <section class="challenge">
+
+        <p>06 / CHALLENGE</p>
+
+        <h2>
+            BUILD YOUR<br>
+            <span>FIRST PAGE.</span>
+        </h2>
+
+        <p>
+            Try creating a page with a heading,
+            paragraph, image and link.
+        </p>
+
+        <a href="#editor" class="primary-btn">
+            Start Coding ↑
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+
+                <a href="Project.html" class="logo">
+                    <span>IC</span>
+                    IMROCC <b>CODES</b>
+                </a>
+
+                <p>
+                    Learn HTML. Master CSS.
+                    Build the web.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Learn</h3>
+
+                <a href="HTML.html">HTML</a>
+                <a href="CSS.html">CSS</a>
+                <a href="Learn.html">Learning</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>IC Pages</h3>
+
+                <a href="Project.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 IMROCC CODES — IC
+            </p>
+
+            <p>
+                HTML Learning Page
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        const codeInput =
+            document.getElementById("codeInput");
+
+        const preview =
+            document.getElementById("preview");
+
+
+        function runCode() {
+
+            preview.srcdoc = codeInput.value;
+
+        }
+
+
+        function clearCode() {
+
+            codeInput.value = "";
+
+            preview.srcdoc = "";
+
+        }
+
+
+        function loadCode(code) {
+
+            codeInput.value = code;
+
+            runCode();
+
+            document.getElementById("editor")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+
+        }
+
+
+        runCode();
+
+
+    </script>
+
+</body>
+</html>
+```

@@ -1,0 +1,886 @@
+
+/* =========================================================
+   IMROCC CODES
+   HTML.css
+   HTML Learning Page
+   ========================================================= */
+
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #001f2b;
+    color: #e9f6f8;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+:root {
+    --dark: #001f2b;
+    --deep: #002b36;
+    --blue: #0077a8;
+    --cyan: #54d8ff;
+    --light: #e9f6f8;
+    --muted: #9dbbc2;
+    --border: rgba(84, 216, 255, 0.18);
+    --card: rgba(0, 55, 70, 0.65);
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    min-height: 80px;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(0, 31, 43, 0.92);
+    border-bottom: 1px solid var(--border);
+
+    backdrop-filter: blur(18px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 17px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    color: var(--cyan);
+    border: 2px solid var(--cyan);
+}
+
+.logo b {
+    color: var(--cyan);
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    color: var(--muted);
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: var(--cyan);
+}
+
+.back {
+    color: var(--cyan);
+    border: 1px solid var(--border);
+    padding: 10px 16px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.back:hover {
+    background: var(--cyan);
+    color: var(--dark);
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 88vh;
+    padding: 100px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(0, 119, 168, 0.24),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #001f2b,
+            #002b36
+        );
+}
+
+.tag,
+.heading > p,
+.challenge > p {
+    color: var(--cyan);
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    margin-top: 20px;
+
+    font-size: clamp(65px, 9vw, 120px);
+    line-height: 0.85;
+    letter-spacing: -6px;
+    font-weight: 900;
+}
+
+.hero h1 span {
+    color: var(--cyan);
+}
+
+.hero-content > p:not(.tag) {
+    max-width: 570px;
+    margin: 30px 0;
+
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 14px 23px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: var(--cyan);
+    color: var(--dark);
+}
+
+.primary-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(84, 216, 255, 0.2);
+}
+
+.secondary-btn {
+    border: 1px solid var(--border);
+}
+
+.secondary-btn:hover {
+    color: var(--cyan);
+    border-color: var(--cyan);
+}
+
+
+/* ================= HTML LOGO ================= */
+
+.html-logo {
+    min-height: 420px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--border);
+
+    background:
+        linear-gradient(
+            145deg,
+            #003d4e,
+            #00171f
+        );
+
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.3);
+
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+}
+
+.html-symbol {
+    color: var(--cyan);
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.html-logo h2 {
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+.html-logo p {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+
+/* ================= GENERAL SECTION ================= */
+
+.section {
+    padding: 110px 8%;
+}
+
+.heading {
+    margin-bottom: 55px;
+}
+
+.heading h2 {
+    margin-top: 12px;
+
+    font-size: clamp(42px, 6vw, 75px);
+    line-height: 0.9;
+    letter-spacing: -4px;
+}
+
+.heading h2 span {
+    color: var(--cyan);
+}
+
+.heading.center {
+    text-align: center;
+}
+
+.heading-description {
+    max-width: 550px;
+    margin: 20px auto 0;
+    color: var(--muted);
+}
+
+
+/* ================= INTRO ================= */
+
+.intro {
+    background: #002630;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.intro-grid > div:first-child {
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.intro-grid p {
+    margin-bottom: 20px;
+}
+
+.example-card {
+    padding: 35px;
+    background: #00171f;
+    border: 1px solid var(--border);
+}
+
+.example-card pre {
+    color: #9eeeff;
+    line-height: 2;
+    overflow-x: auto;
+}
+
+
+/* ================= LESSONS ================= */
+
+.lessons {
+    background: #001f2b;
+}
+
+.lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.lesson-card {
+    position: relative;
+
+    padding: 35px;
+    min-height: 420px;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+
+    transition: 0.35s;
+}
+
+.lesson-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--cyan);
+}
+
+.number {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    color: #275c69;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.lesson-icon {
+    color: var(--cyan);
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.lesson-card h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.lesson-card > p {
+    color: var(--muted);
+    font-size: 14px;
+    min-height: 75px;
+}
+
+.lesson-card pre {
+    margin-top: 20px;
+    padding: 18px;
+
+    background: #00171f;
+
+    color: #9eeeff;
+    font-size: 11px;
+    line-height: 1.8;
+
+    overflow-x: auto;
+}
+
+.lesson-card button {
+    margin-top: 18px;
+
+    padding: 10px 16px;
+
+    color: var(--cyan);
+    background: transparent;
+    border: 1px solid var(--border);
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.lesson-card button:hover {
+    background: var(--cyan);
+    color: var(--dark);
+}
+
+
+/* ================= EDITOR ================= */
+
+.editor-section {
+    padding: 110px 8%;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0, 119, 168, 0.16),
+            transparent 55%
+        );
+}
+
+.editor {
+    max-width: 1050px;
+    margin: auto;
+
+    background: #00151d;
+    border: 1px solid var(--border);
+
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.3);
+}
+
+.editor-top {
+    min-height: 60px;
+    padding: 10px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--border);
+
+    color: var(--cyan);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.editor-top div {
+    display: flex;
+    gap: 8px;
+}
+
+.editor-top button {
+    padding: 9px 14px;
+
+    color: var(--cyan);
+    background: #002b36;
+
+    border: 1px solid var(--border);
+
+    cursor: pointer;
+}
+
+.editor-top button:hover {
+    background: var(--cyan);
+    color: var(--dark);
+}
+
+#codeInput {
+    width: 100%;
+    min-height: 350px;
+
+    padding: 25px;
+
+    display: block;
+
+    resize: vertical;
+
+    border: none;
+    outline: none;
+
+    background: #00171f;
+    color: #9eeeff;
+
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.preview-title {
+    padding: 15px 20px;
+
+    color: var(--cyan);
+    background: #002630;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+#preview {
+    width: 100%;
+    height: 330px;
+
+    display: block;
+
+    border: none;
+
+    background: white;
+}
+
+
+/* ================= STRUCTURE ================= */
+
+.structure {
+    background: #002630;
+}
+
+.structure-code {
+    max-width: 850px;
+    margin: auto;
+
+    padding: 35px;
+
+    background: #00171f;
+    border: 1px solid var(--border);
+}
+
+.structure-code pre {
+    color: #9eeeff;
+    line-height: 2;
+    overflow-x: auto;
+}
+
+
+/* ================= TOPICS ================= */
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.topic {
+    padding: 30px;
+    min-height: 190px;
+
+    border: 1px solid var(--border);
+    background: var(--card);
+
+    transition: 0.3s;
+}
+
+.topic:hover {
+    transform: translateY(-8px);
+    border-color: var(--cyan);
+}
+
+.topic strong {
+    color: var(--cyan);
+}
+
+.topic h3 {
+    margin-top: 40px;
+    font-size: 21px;
+}
+
+.topic p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+
+/* ================= CHALLENGE ================= */
+
+.challenge {
+    padding: 130px 8%;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 119, 168, 0.24),
+            transparent 55%
+        );
+}
+
+.challenge h2 {
+    margin: 25px 0;
+
+    font-size: clamp(50px, 8vw, 100px);
+    line-height: 0.9;
+    letter-spacing: -5px;
+}
+
+.challenge h2 span {
+    color: var(--cyan);
+}
+
+.challenge > p:nth-of-type(2) {
+    max-width: 500px;
+    margin: 0 auto 30px;
+
+    color: var(--muted);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 70px 8% 25px;
+
+    background: #00151d;
+    border-top: 1px solid var(--border);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+
+    padding-bottom: 55px;
+}
+
+.footer-grid > div:first-child p {
+    max-width: 300px;
+    margin-top: 18px;
+
+    color: var(--muted);
+}
+
+.footer-grid h3 {
+    color: var(--cyan);
+    margin-bottom: 12px;
+}
+
+.footer-grid a:not(.logo) {
+    display: block;
+    width: fit-content;
+
+    margin-bottom: 8px;
+
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.footer-grid a:not(.logo):hover {
+    color: var(--cyan);
+}
+
+.footer-bottom {
+    padding-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid var(--border);
+
+    color: #668990;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .lesson-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .topic-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        min-height: 70px;
+        padding: 12px 6%;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    .logo span {
+        width: 36px;
+        height: 36px;
+    }
+
+    .back {
+        padding: 8px 11px;
+        font-size: 11px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 70px 6%;
+        gap: 45px;
+    }
+
+    .hero h1 {
+        font-size: 62px;
+        letter-spacing: -4px;
+    }
+
+    .hero-content > p:not(.tag) {
+        font-size: 15px;
+    }
+
+    .html-logo {
+        min-height: 300px;
+    }
+
+    .html-symbol {
+        font-size: 75px;
+    }
+
+
+    /* SECTIONS */
+
+    .section {
+        padding: 75px 6%;
+    }
+
+    .heading {
+        margin-bottom: 35px;
+    }
+
+    .heading h2 {
+        font-size: 45px;
+    }
+
+
+    /* INTRO */
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+    /* LESSONS */
+
+    .lesson-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lesson-card {
+        min-height: auto;
+    }
+
+
+    /* EDITOR */
+
+    .editor-section {
+        padding: 75px 6%;
+    }
+
+    .editor-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #codeInput {
+        min-height: 300px;
+        font-size: 12px;
+    }
+
+    #preview {
+        height: 280px;
+    }
+
+
+    /* TOPICS */
+
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* CHALLENGE */
+
+    .challenge {
+        padding: 90px 6%;
+    }
+
+    .challenge h2 {
+        font-size: 55px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 60px 6% 25px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .footer-grid > div:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 420px) {
+
+    .back {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .lesson-card {
+        padding: 25px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid > div:first-child {
+        grid-column: auto;
+    }
+
+}
+
